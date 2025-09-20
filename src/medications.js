@@ -1,0 +1,1100 @@
+// Полная база данных всех препаратов из документа
+export const medications = [
+  // Список 1
+  {
+    id: 1,
+    name: 'Пилокарпин',
+    latinName: 'Pilocarpinum',
+    form: 'Глазные капли 1%',
+    indication: 'для лечения глаукомы',
+    recipe: 'Sol. Pilocarpini hydrochloridi 1% - 5ml',
+    dosage: 'По 2 капли в конъюнктивальный мешок 2-6 раз в сутки',
+    category: 'Холиномиметики'
+  },
+  {
+    id: 2,
+    name: 'Цитизин',
+    latinName: 'Cytisinum',
+    form: 'Таблетки',
+    indication: 'для отказа от курения',
+    recipe: 'Tab. Cytisini 0,0015\nD.t.d. № 20',
+    dosage: 'По схеме согласно инструкции',
+    category: 'Холиномиметики'
+  },
+  {
+    id: 3,
+    name: 'Неостигмина метилсульфат',
+    altName: 'Прозерин',
+    latinName: 'Neostigmini methylsulfas',
+    form: 'Раствор для инъекций',
+    indication: 'при миастении',
+    recipe: 'Sol. Neostigmini methylsulfatis 0,05% - 1ml\nD.t.d. № 10 in amp.',
+    dosage: 'Подкожно по 1 мл 2 раза в день',
+    category: 'Антихолинэстеразные'
+  },
+  {
+    id: 4,
+    name: 'Атропин',
+    latinName: 'Atropinum sulfuricum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Atropini sulfatis 0,1% - 1ml\nD.t.d. № 10 in amp.',
+    dosage: 'Подкожно по 1 мл при необходимости',
+    category: 'Холиноблокаторы'
+  },
+  {
+    id: 5,
+    name: 'Азаметония бромид',
+    altName: 'Пентамин',
+    latinName: 'Azamethonii bromidum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Azamethonii bromidi 5% - 1ml\nD.t.d. № 10 in amp.',
+    dosage: 'Внутримышечно по 1 мл 2 раза в день',
+    category: 'Ганглиоблокаторы'
+  },
+  {
+    id: 6,
+    name: 'Суксаметония йодид',
+    altName: 'Дитилин',
+    latinName: 'Suxamethonii iodidum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Suxamethonii iodidi 2% - 5ml\nD.t.d. № 5 in amp.',
+    dosage: 'Вводят внутривенно по 5 мл при вправлении вывихов',
+    category: 'Миорелаксанты'
+  },
+  {
+    id: 7,
+    name: 'Эпинефрин',
+    altName: 'Адреналин',
+    latinName: 'Epinephrinum',
+    form: 'Раствор для инъекций',
+    indication: 'при анафилактическом шоке',
+    recipe: 'Sol. Epinephrini hydrochloridi 0,1% - 1ml\nD.t.d. № 10 in amp.',
+    dosage: 'Подкожно по 1мл',
+    category: 'Адреномиметики'
+  },
+  {
+    id: 8,
+    name: 'Норэпинефрин',
+    altName: 'Норадреналин',
+    latinName: 'Norepinephrinum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Norepinephrini hydrotartratis 0,2% - 1ml\nD.t.d. № 5 in amp.',
+    dosage: 'Предварительно растворить в 500мл 0,9% раствора натрия хлорид, вводить внутривенно медленно',
+    category: 'Адреномиметики'
+  },
+  {
+    id: 9,
+    name: 'Эфедрин',
+    latinName: 'Ephedrinum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Ephedrini hydrochloridi 5% - 1ml\nD.t.d. № 10 in amp.',
+    dosage: 'Подкожно по 1 мл 2 раза в день',
+    category: 'Симпатомиметики'
+  },
+  {
+    id: 10,
+    name: 'Фенилэфрин',
+    altName: 'Мезатон',
+    latinName: 'Phenylephinum',
+    form: 'Глазные капли',
+    indication: 'для расширения зрачка',
+    recipe: 'Sol. Phenylephini hydrochloridi 1% - 5ml',
+    dosage: 'По 2 капли в конъюнктивальный мешок за 15-30 минут до осмотра',
+    category: 'Адреномиметики'
+  },
+  {
+    id: 11,
+    name: 'Пропранолол',
+    altName: 'Анаприлин',
+    latinName: 'Propranololum',
+    form: 'Таблетки',
+    indication: 'при артериальной гипертензии',
+    recipe: 'Tab. Propranololi 0,01\nD.t.d. № 50',
+    dosage: 'По 1 таблетке 3 раза в день',
+    category: 'Бета-адреноблокаторы'
+  },
+  {
+    id: 12,
+    name: 'Резерпин',
+    latinName: 'Reserpinum',
+    form: 'Таблетки',
+    indication: 'в комбинированных препаратах',
+    recipe: 'Reserpini 0,0001\nD. t. d. № 50 in tab.',
+    dosage: 'Внутрь, по 1 таблетке 3 раза в сутки, независимо от приема пищи',
+    category: 'Симпатолитики'
+  },
+  {
+    id: 13,
+    name: 'Гексобарбитал',
+    latinName: 'Hexobarbitalum',
+    form: 'Порошок для инъекций',
+    indication: '',
+    recipe: 'Hexobarbitali natrii 1,0\nD.t.d. № 10',
+    dosage: 'Для внутривенного наркоза. Содержимое флакона растворить в 10 мл воды для инъекций. Вводить медленно внутривенно.',
+    category: 'Барбитураты'
+  },
+  {
+    id: 14,
+    name: 'Натрия оксибутират',
+    latinName: 'Natrii oxybutyras',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Natrii oxybutyratis 20% - 10ml\nD.t.d. № 5 in amp.',
+    dosage: 'Внутривенно медленно по назначению врача',
+    category: 'Снотворные'
+  },
+  {
+    id: 15,
+    name: 'Этанол',
+    altName: 'Этиловый спирт',
+    latinName: 'Aethanol',
+    form: 'Раствор для наружного применения',
+    indication: '',
+    recipe: 'Sol. Aethanoli 70% - 100ml',
+    dosage: 'Для наружного применения',
+    category: 'Антисептики'
+  },
+  {
+    id: 16,
+    name: 'Фенобарбитал',
+    latinName: 'Phenobarbitalum',
+    form: 'Таблетки',
+    indication: 'при эпилепсии',
+    recipe: 'Tab. Phenobarbitali 0,1\nD.t.d. № 10 in tab',
+    dosage: 'По 1 таблетке 3 раза в день при эпилепсии',
+    category: 'Противоэпилептические'
+  },
+  {
+    id: 17,
+    name: 'Диазепам',
+    altName: 'Сибазон, Релиум',
+    latinName: 'Diazepamum',
+    form: 'Таблетки',
+    indication: 'при тревожности',
+    recipe: 'Tab. Diazepami 0,005\nD.t.d. № 20',
+    dosage: 'По 1 таблетке 3 раза в день',
+    category: 'Транквилизаторы'
+  },
+  {
+    id: 18,
+    name: 'Зопиклон',
+    altName: 'Сомнол, Имован',
+    latinName: 'Zopiclonum',
+    form: 'Таблетки',
+    indication: 'при инсомнии',
+    recipe: 'Tab. Zopicloni 0,0075\nD.t.d. № 10',
+    dosage: 'По 1 таблетке за 30 минут до сна',
+    category: 'Снотворные'
+  },
+  {
+    id: 19,
+    name: 'Морфин',
+    latinName: 'Morphinum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Morphini hydrochloridi 1% - 1ml\nD.t.d. № 10 in amp.',
+    dosage: 'Подкожно по 1 мл при сильных болях',
+    category: 'Опиоиды'
+  },
+  {
+    id: 20,
+    name: 'Фентанил',
+    latinName: 'Fentanylum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Fentanyli 0,005% - 2ml\nD.t.d. № 5 in amp.',
+    dosage: 'В сочетании с нейролептиком 1мл на 5кг веса или 2мл перед операцией',
+    category: 'Опиоиды'
+  },
+  {
+    id: 21,
+    name: 'Налоксон',
+    latinName: 'Naloxonum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Naloxoni hydrochloridi 0,004% - 1ml\nD.t.d. № 10 in amp.',
+    dosage: 'Внутривенно по 1 мл при передозировке опиоидов',
+    category: 'Антагонисты опиоидов'
+  },
+  {
+    id: 22,
+    name: 'Трамадол',
+    latinName: 'Tramadolum',
+    form: 'Капсулы',
+    indication: 'при болевом синдроме',
+    recipe: 'Tramadoli 0,05\nD.t.d. № 20 in caps.',
+    dosage: 'По 1 капсуле 3 раза в день',
+    category: 'Опиоиды'
+  },
+  {
+    id: 23,
+    name: 'Тримеперидин',
+    altName: 'Промедол',
+    latinName: 'Trimepеridinum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Trimerperidini 2% - 1ml\nD.t.d. № 10 in amp.',
+    dosage: 'Подкожно по 1 мл при болевом синдроме',
+    category: 'Опиоиды'
+  },
+  {
+    id: 24,
+    name: 'Омнопон',
+    latinName: 'Omnоpon',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Omnoponi 1% - 1ml\nD.t.d. № 5 in amp.',
+    dosage: 'Подкожно по 1 мл при сильных болях',
+    category: 'Опиоиды'
+  },
+  {
+    id: 25,
+    name: 'Ацетилсалициловая кислота',
+    latinName: 'Acidum acetylsalicylicum',
+    form: 'Таблетки',
+    indication: '',
+    recipe: 'Acidi acetylsalicylici 0,5\nD.t.d. № 20 in tab.',
+    dosage: 'По 1 таблетке 3 раза в день после еды',
+    category: 'НПВС'
+  },
+  {
+    id: 26,
+    name: 'Хлорпромазин',
+    altName: 'Аминазин',
+    latinName: 'Chlorpromazinum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Chlorpromazini hydrochloridi 2,5% - 2ml\nD.t.d. № 10 in amp.',
+    dosage: 'Внутримышечно по 1 мл 2 раза в день',
+    category: 'Нейролептики'
+  },
+  {
+    id: 27,
+    name: 'Дроперидол',
+    latinName: 'Droperidolum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Droperidoli 2,5% - 1ml\nD.t.d. № 5 in amp.',
+    dosage: 'Внутримышечно по 1 мл для атаралгезии',
+    category: 'Нейролептики'
+  },
+  {
+    id: 28,
+    name: 'Алимемазин',
+    altName: 'Тералиджен',
+    latinName: 'Alimemazinum',
+    form: 'Таблетки',
+    indication: '',
+    recipe: 'Alimemazini 0,005\nD.t.d. № 20 in tab.',
+    dosage: 'По 1 таблетке 3 раза в день',
+    category: 'Нейролептики'
+  },
+  {
+    id: 29,
+    name: 'Диазепам',
+    altName: 'Сибазон, Релиум',
+    latinName: 'Diazepamum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Diazepami 0,5% - 2ml\nD.t.d. № 10 in amp.',
+    dosage: 'Внутримышечно по 2 мл при психомоторном возбуждении',
+    category: 'Транквилизаторы'
+  },
+  {
+    id: 30,
+    name: 'Валерианы корневища',
+    latinName: 'Valerianae rhizomata',
+    form: 'Настойка',
+    indication: '',
+    recipe: 'Tinct. Valerianae 25ml',
+    dosage: 'По 20-30 капель 3 раза в день',
+    category: 'Седативные средства'
+  },
+  {
+    id: 31,
+    name: 'Амитриптилин',
+    latinName: 'Amitriptylinum',
+    form: 'Таблетки',
+    indication: 'при депрессии',
+    recipe: 'Amitriptylini 0,025\nD.t.d. № 30 in tab.',
+    dosage: 'По 1 таблетке 3 раза в день',
+    category: 'Антидепрессанты'
+  },
+  {
+    id: 32,
+    name: 'Вортиоксетин',
+    altName: 'Бринтелликс',
+    latinName: 'Vortioxetinum',
+    form: 'Таблетки',
+    indication: 'при депрессии',
+    recipe: 'Vortioxetini 0,005\nD.t.d. № 28 in tab.',
+    dosage: 'По 1 таблетке 1 раз в день',
+    category: 'Антидепрессанты'
+  },
+  {
+    id: 33,
+    name: 'Тразодон',
+    altName: 'Триттико',
+    latinName: 'Trazodonum',
+    form: 'Таблетки',
+    indication: 'при депрессии',
+    recipe: 'Trazodoni 0,1\nD.t.d. № 30 in tab.',
+    dosage: 'По 1 таблетке 3 раза в день',
+    category: 'Антидепрессанты'
+  },
+  {
+    id: 34,
+    name: 'Лития карбонат',
+    altName: 'Седалит',
+    latinName: 'Lithii carbonas',
+    form: 'Таблетки',
+    indication: 'при биполярном расстройстве',
+    recipe: 'Lithii carbonatis 0,3\nD.t.d. № 30 in tab.',
+    dosage: 'По 1 таблетке 3 раза в день под контролем уровня лития в крови',
+    category: 'Нормотимики'
+  },
+  {
+    id: 35,
+    name: 'Никетамид',
+    altName: 'Кордиамин',
+    latinName: 'Nicethamidum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Nicethamidi 25% - 2ml\nD.t.d. № 10 in amp.',
+    dosage: 'Подкожно по 2 мл при угнетении дыхания',
+    category: 'Аналептики'
+  },
+  
+  // Список 2
+  {
+    id: 36,
+    name: 'Кофеин',
+    altName: 'кофеина–бензоата натрия',
+    latinName: 'Coffeinum',
+    form: 'Раствор для инъекций',
+    indication: 'при угнетении ЦНС',
+    recipe: 'Sol. Coffeini-natrii benzoatis 10% - 1ml\nD.t.d. № 10 in amp.',
+    dosage: 'Подкожно по 1 мл при необходимости',
+    category: 'Психостимуляторы'
+  },
+  {
+    id: 37,
+    name: 'Фонтурацетам',
+    altName: 'фенотропил, нанотропил ново, актитропил',
+    latinName: 'Fonturacetam',
+    form: 'Таблетки',
+    indication: 'при когнитивных нарушениях',
+    recipe: 'Fonturacetami 0,1\nD.t.d. № 30 in tab.',
+    dosage: 'По 1 таблетке утром после еды',
+    category: 'Ноотропы'
+  },
+  {
+    id: 38,
+    name: 'Холина альфосцерат',
+    altName: 'глиамедин, церетон',
+    latinName: 'Cholini alfosceras',
+    form: 'Капсулы',
+    indication: 'при цереброваскулярных заболеваниях',
+    recipe: 'Choline alfosceratis 0,4\nD.t.d. № 56 in caps.',
+    dosage: 'По 1 капсуле 2 раза в день',
+    category: 'Ноотропы'
+  },
+  {
+    id: 39,
+    name: 'Аминофенилмасляная кислота',
+    altName: 'фенибут',
+    latinName: 'Acidum aminophenylbutyricum',
+    form: 'Таблетки',
+    indication: 'при тревожных расстройствах',
+    recipe: 'Phenibuti 0,25\nD.t.d. № 20 in tab.',
+    dosage: 'По 1 таблетке 3 раза в день',
+    category: 'Ноотропы'
+  },
+  {
+    id: 40,
+    name: 'Винпоцетин',
+    latinName: 'Vinpocetinum',
+    form: 'Таблетки',
+    indication: 'при нарушениях мозгового кровообращения',
+    recipe: 'Vinpocetini 0,005\nD.t.d. № 30 in tab.',
+    dosage: 'По 1 таблетке 3 раза в день',
+    category: 'Цереброваскулярные средства'
+  },
+  {
+    id: 41,
+    name: 'Лидокаин',
+    latinName: 'Lidocainum',
+    form: 'Раствор',
+    indication: 'для местной анестезии',
+    recipe: 'Sol. Lidocaini hydrochloridi 2% - 5ml\nD.t.d. № 10 in amp.',
+    dosage: 'Развести 5мл в 80мл изотонического раствора, вводить внутривенно струйно',
+    category: 'Местные анестетики'
+  },
+  {
+    id: 42,
+    name: 'Висмута трикалия дицитрат',
+    latinName: 'Bismuthi trikalii dicitras',
+    form: 'Таблетки',
+    indication: 'при язвенной болезни',
+    recipe: 'Bismuthi trikalii dicitratis 0,12\nD.t.d. № 56 in tab.',
+    dosage: 'По 2 таблетки 2 раза в день за 30 минут до еды',
+    category: 'Гастропротекторы'
+  },
+  {
+    id: 43,
+    name: 'Активированный уголь',
+    latinName: 'Carbo activatus',
+    form: 'Таблетки',
+    indication: 'при отравлениях и диспепсии',
+    recipe: 'Carbonis activati 0,25\nD.t.d. № 20 in tab.',
+    dosage: 'По 8 таблеток 4 раза в день при отравлении',
+    category: 'Адсорбенты'
+  },
+  {
+    id: 44,
+    name: 'Аммиак',
+    altName: 'аммиака раствор',
+    latinName: 'Ammonium',
+    form: 'Раствор',
+    indication: 'для ингаляций',
+    recipe: 'Sol. Ammonii caustici 10% - 10ml',
+    dosage: 'Для ингаляций при обмороке',
+    category: 'Раздражающие средства'
+  },
+  {
+    id: 45,
+    name: 'Дигитоксин',
+    latinName: 'Digitoxinum',
+    form: 'Таблетки',
+    indication: 'при сердечной недостаточности',
+    recipe: 'Digitoxini 0,0001\nD.t.d. № 30 in tab.',
+    dosage: 'По 1 таблетке 1 раз в день',
+    category: 'Сердечные гликозиды'
+  },
+  {
+    id: 46,
+    name: 'Уабаин',
+    altName: 'строфантин Г',
+    latinName: 'Ouabainum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Ouabaini 0,025% - 1ml\nD.t.d. № 10 in amp.',
+    dosage: 'Внутривенно медленно по 1 мл',
+    category: 'Сердечные гликозиды'
+  },
+  {
+    id: 47,
+    name: 'Ландыша листьев гликозид',
+    altName: 'коргликон',
+    latinName: 'Corglyconum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Corglycon 0,06% - 1ml\nD.t.d. № 10 in amp.',
+    dosage: 'Внутривенно медленно по 1 мл',
+    category: 'Сердечные гликозиды'
+  },
+  {
+    id: 48,
+    name: 'Трилон Б',
+    latinName: 'Trilon B',
+    form: 'Раствор для инъекций',
+    indication: 'при отравлении тяжелыми металлами',
+    recipe: 'Sol. Trilon B 5% - 10ml\nD.t.d. № 10 in amp.',
+    dosage: 'Внутривенно 10мл развести в 200мл изотонического раствора, вводить медленно 1 раз в день в течении 5 дней, затем перерыв 7 дней',
+    category: 'Антидоты'
+  },
+  {
+    id: 49,
+    name: 'Аторвастатин',
+    latinName: 'Atorvastatinum',
+    form: 'Таблетки',
+    indication: 'при гиперхолестеринемии',
+    recipe: 'Atorvastatini 0,04\nD.t.d. № 30 in tab.',
+    dosage: 'По 1 таблетке вечером',
+    category: 'Статины'
+  },
+  {
+    id: 50,
+    name: 'Магния сульфат',
+    latinName: 'Magnesii sulfas',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Magnesii sulfatis 25% - 10ml\nD.t.d. № 10 in amp.',
+    dosage: 'Внутримышечно по 10 мл',
+    category: 'Противосудорожные'
+  },
+  {
+    id: 51,
+    name: 'Папаверина гидрохлорид',
+    latinName: 'Papaverini hydrochloridum',
+    form: 'Раствор для инъекций',
+    indication: 'при спазмах',
+    recipe: 'Sol. Papaverini hydrochloridi 2% - 2ml\nD.t.d. № 10 in amp.',
+    dosage: 'Внутримышечно по 2 мл 3 раза в день',
+    category: 'Спазмолитики'
+  },
+  {
+    id: 52,
+    name: 'Бендазол',
+    altName: 'дибазол',
+    latinName: 'Bendazolum',
+    form: 'Таблетки',
+    indication: 'при артериальной гипертензии',
+    recipe: 'Bendazoli 0,02\nD.t.d. № 30 in tab.',
+    dosage: 'По 1 таблетке 3 раза в день',
+    category: 'Спазмолитики'
+  },
+  {
+    id: 53,
+    name: 'Каптоприл',
+    altName: 'капотен',
+    latinName: 'Captoprilum',
+    form: 'Таблетки',
+    indication: 'при артериальной гипертензии',
+    recipe: 'Captoprili 0,025\nD.t.d. № 30 in tab.',
+    dosage: 'По 1 таблетке 3 раза в день',
+    category: 'Ингибиторы АПФ'
+  },
+  {
+    id: 54,
+    name: 'Моксонидин',
+    altName: 'физиотенз',
+    latinName: 'Moxonidinum',
+    form: 'Таблетки',
+    indication: 'при артериальной гипертензии',
+    recipe: 'Moxonidini 0,0004\nD.t.d. № 30 in tab.',
+    dosage: 'По 1 таблетке утром',
+    category: 'Антигипертензивные'
+  },
+  {
+    id: 55,
+    name: 'Гидрохлоротиазид',
+    altName: 'гипотиазид, дихлотиазид',
+    latinName: 'Hydrochlorothiazidum',
+    form: 'Таблетки-диуретик',
+    indication: '',
+    recipe: 'Hydrochlorothiazidi 0,025\nD.t.d. № 30 in tab.',
+    dosage: 'По 1 таблетке утром',
+    category: 'Диуретики'
+  },
+  {
+    id: 56,
+    name: 'Фуросемид',
+    altName: 'лазикс',
+    latinName: 'Furosemidum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Furosemidi 1% - 2ml\nD.t.d. № 10 in amp.',
+    dosage: 'Внутримышечно по 2 мл при отеках',
+    category: 'Диуретики'
+  },
+  {
+    id: 57,
+    name: 'Маннитол',
+    altName: 'маннит',
+    latinName: 'Mannitolum',
+    form: 'Раствор для инфузий',
+    indication: '',
+    recipe: 'Sol. Manniti 15% - 200ml',
+    dosage: 'Вводить медленно внутривенно 200мл',
+    category: 'Осмотические диуретики'
+  },
+  {
+    id: 58,
+    name: 'Лидокаин',
+    latinName: 'Lidocainum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Lidocaini hydrochloridi 10% - 2ml\nD.t.d. № 5 in amp.',
+    dosage: 'Для проводниковой анестезии',
+    category: 'Местные анестетики'
+  },
+  {
+    id: 59,
+    name: 'Нитроглицерин',
+    latinName: 'Nitroglycerinum',
+    form: 'Таблетки подъязычные',
+    indication: 'при стенокардии',
+    recipe: 'Nitroglycerini 0,0005\nD.t.d. № 40 in tab.',
+    dosage: 'По 1 таблетке под язык при приступе стенокардии',
+    category: 'Антиангинальные'
+  },
+  {
+    id: 60,
+    name: 'Амилнитрит',
+    latinName: 'Amylii nitris',
+    form: 'Капсулы для ингаляций',
+    indication: '',
+    recipe: 'Amylii nitritis 0,2 ml\nD.t.d. № 6',
+    dosage: 'Ингаляционно. Капсулу раздавить, вдыхать содержимое при приступе стенокардии. Хранить в прохладном месте.',
+    category: 'Антиангинальные'
+  },
+  {
+    id: 61,
+    name: 'Эргометрин',
+    latinName: 'Ergometrinum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Ergometrini 0,02% - 1ml\nD.t.d. № 5 in amp.',
+    dosage: 'Внутримышечно по 1 мл при атонии матки',
+    category: 'Утеротоники'
+  },
+  {
+    id: 62,
+    name: 'Окситоцин',
+    latinName: 'Oxytocinum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Oxytocini 5 ME – 1ml\nD.t.d. № 10 in amp.',
+    dosage: 'По 1мл в/в быстро в 500мл изотонического раствора для усиления схваток',
+    category: 'Утеротоники'
+  },
+  {
+    id: 63,
+    name: 'Дифенгидрамин',
+    altName: 'димедрол',
+    latinName: 'Diphenhydraminum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Dimedroli 1% - 1ml\nD.t.d. № 10 in amp.',
+    dosage: 'Внутримышечно по 1 мл при аллергических реакциях',
+    category: 'Антигистаминные'
+  },
+  {
+    id: 64,
+    name: 'Гепарин натрия',
+    altName: 'гепарин',
+    latinName: 'Heparinum natrium',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Heparini natrii 5000 ЕД – 5ml\nD.t.d. № 10 in amp.',
+    dosage: 'По 1мл за два часа до операции, затем 2 раза в день в течении 10 дней',
+    category: 'Антикоагулянты'
+  },
+  {
+    id: 65,
+    name: 'Менадиона натрия бисульфит',
+    altName: 'викасол',
+    latinName: 'Menadioni natrii bisulfis',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Vikasoli 1% - 1ml\nD.t.d. № 10 in amp.',
+    dosage: 'Внутримышечно по 1 мл при кровотечениях',
+    category: 'Гемостатики'
+  },
+  {
+    id: 66,
+    name: 'Кислота аминокапроновая',
+    latinName: 'Acidum aminocapronicum',
+    form: 'Раствор для инфузий',
+    indication: '',
+    recipe: 'Sol. Acidi aminocapronici 5% - 100ml',
+    dosage: '100мл внутривенно в первый час, затем по 10мл в час',
+    category: 'Гемостатики'
+  },
+  {
+    id: 67,
+    name: 'Цианокобаламин',
+    latinName: 'Cyanocobalaminum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Cyanocobalamini 0,05% - 1ml\nD.t.d. № 10 in amp.',
+    dosage: 'Внутримышечно по 1 мл через день',
+    category: 'Витамины'
+  },
+  {
+    id: 68,
+    name: 'Кальция хлорид',
+    latinName: 'Calcii chloridum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Calcii chloridi 10% - 10ml\nD.t.d. № 10 in amp.',
+    dosage: 'Внутривенно медленно по 10 мл',
+    category: 'Препараты кальция'
+  },
+  {
+    id: 69,
+    name: 'Натрия цитрат',
+    latinName: 'Natrii citras',
+    form: 'Раствор для инфузий',
+    indication: '',
+    recipe: 'Sol. Natrii citratis 3% - 200ml',
+    dosage: 'Внутрь, по 15мл 3 раза в день, независимо от приема пищи',
+    category: 'Регуляторы КЩС'
+  },
+  {
+    id: 70,
+    name: 'Инсулин',
+    latinName: 'Insulinum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Insulini 100 ЕД – 3ml\nD.t.d. № 5',
+    dosage: 'Подкожно по назначению врача согласно уровню гликемии',
+    category: 'Гормоны'
+  },
+  
+  // Список 3
+  {
+    id: 71,
+    name: 'Преднизолон',
+    latinName: 'Prednisolonum',
+    form: 'Таблетки',
+    indication: 'при воспалительных заболеваниях',
+    recipe: 'Prednisoloni 0,005\nD.t.d. № 30 in tab.',
+    dosage: 'По 1 таблетки утром после еды',
+    category: 'Глюкокортикоиды'
+  },
+  {
+    id: 72,
+    name: 'Глюкоза',
+    latinName: 'Glucosum',
+    form: 'Раствор для инфузий',
+    indication: 'при гипогликемии',
+    recipe: 'Sol. Glucosae 5% - 100ml',
+    dosage: 'Внутривенно струйно 100мл при гипогликемическом шоке',
+    category: 'Средства для парентерального питания'
+  },
+  {
+    id: 73,
+    name: 'Апротинин',
+    altName: 'контрикал',
+    latinName: 'Aprotininum',
+    form: 'Раствор для инъекций',
+    indication: 'при панкреатите',
+    recipe: 'Sol. Aprotinini 25 000 ED-25 ml\nD.t.d. № 10 in amp.',
+    dosage: 'При остром панкреатите. Вводить внутривенно капельно в 200 мл изотонического раствора натрия хлорида 2-3 раза в сутки.',
+    category: 'Ингибиторы протеаз'
+  },
+  {
+    id: 74,
+    name: 'Пенициллиназа',
+    latinName: 'Penicillinase',
+    form: 'Лиофилизат для инъекций',
+    indication: '',
+    recipe: 'Penicillinase 1000000ЕD\nD.t.d. № 5 in pulv.',
+    dosage: 'При отравлении пинициллинами в/м развести в 2 мл воды для иньекций',
+    category: 'Антидоты'
+  },
+  {
+    id: 75,
+    name: 'Эргокальциферол',
+    latinName: 'Ergocalciferolum',
+    form: 'Масляный раствор витамина D2',
+    indication: '',
+    recipe: 'Sol. Ergocalciferoli oleosae 0,125% - 10ml',
+    dosage: 'По 10-15 капель 1 раз в день',
+    category: 'Витамины'
+  },
+  {
+    id: 76,
+    name: 'Цианокобаламин',
+    latinName: 'Cyanocobalaminum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Cyanocobalamini 0,05% - 1ml\nD.t.d. № 10 in amp.',
+    dosage: 'Внутримышечно по 1 мл через день',
+    category: 'Витамины'
+  },
+  {
+    id: 77,
+    name: 'Настой травы термопсиса',
+    latinName: 'Infusum herbae Thermopsidis',
+    form: 'Настой',
+    indication: 'отхаркивающего действия',
+    recipe: 'Inf. herbae Thermopsidis 0,6:180ml',
+    dosage: 'По 1 столовой ложке 3 раза в день',
+    category: 'Отхаркивающие'
+  },
+  {
+    id: 78,
+    name: 'Калия перманганат',
+    latinName: 'Kalii permanganas',
+    form: 'Порошок для приготовления растворов',
+    indication: '',
+    recipe: 'Kalii permanganatis 15.0\nD.t.d. N.1 in pulv',
+    dosage: 'Развести в 100мл воды, для наружного промывания ран',
+    category: 'Антисептики'
+  },
+  {
+    id: 79,
+    name: 'Метиленовый синий',
+    latinName: 'Methylenum coeruleum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Methyleni coerulei 1% - 25ml',
+    dosage: 'Внутривенно при отравлении цианидами 50мл',
+    category: 'Антидоты'
+  },
+  {
+    id: 80,
+    name: 'Спиртовой раствор йода',
+    latinName: 'Solutio Iodi spirituosa',
+    form: 'Раствор для наружного применения',
+    indication: '',
+    recipe: 'Sol. Iodi spirituosae 5% - 10ml',
+    dosage: 'Для обработки кожи',
+    category: 'Антисептики'
+  },
+  {
+    id: 81,
+    name: 'Натрия гидрокарбонат',
+    latinName: 'Natrii hydrocarbonas',
+    form: 'Порошок для приема внутрь',
+    indication: '',
+    recipe: 'Natrii hydrocarbonatis 4% - 20ml\nD. t. d. №10',
+    dosage: 'По 100мл внутривенно при выраженном ацидозе',
+    category: 'Регуляторы КЩС'
+  },
+  {
+    id: 82,
+    name: 'Отвар листьев толокнянки',
+    latinName: 'Decoctum foliorum Uvae ursi',
+    form: 'Отвар',
+    indication: 'мочегонного действия',
+    recipe: 'Dec. fol. Uvae ursi 10,0:180ml',
+    dosage: 'По 1 столовой ложке 1 раза в день',
+    category: 'Диуретики'
+  },
+  {
+    id: 83,
+    name: 'Гексаметилентетрамин',
+    latinName: 'Hexamethylentetraminum',
+    form: 'Таблетки уроантисептика',
+    indication: '',
+    recipe: 'Tab. Hexamethylentetramini 0,5\nD.t.d. № 20',
+    dosage: 'По 1 таблетке 3 раза в день',
+    category: 'Уроантисептики'
+  },
+  {
+    id: 84,
+    name: 'Натрия тиосульфат',
+    latinName: 'Natrii thiosulfas',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Natrii thiosulfatis 30% - 10ml\nD.t.d. № 10 in amp.',
+    dosage: 'Внутривенно медленно по 10 мл при отравлениях',
+    category: 'Антидоты'
+  },
+  {
+    id: 85,
+    name: 'Сульфадимезин',
+    latinName: 'Sulfadimezinum',
+    form: 'Таблетки',
+    indication: '',
+    recipe: 'Sulfadimezini 0,5\nD.t.d. № 20 in tab.',
+    dosage: 'По 1 таблетке 4 раза в день',
+    category: 'Сульфаниламиды'
+  },
+  {
+    id: 86,
+    name: 'Сульфадиметоксин',
+    latinName: 'Sulfadimethoxinum',
+    form: 'Таблетки',
+    indication: '',
+    recipe: 'Sulfadimethoxini 0,5\nD.t.d. № 20 in tab.',
+    dosage: 'По 1 таблетке 2 раза в день',
+    category: 'Сульфаниламиды'
+  },
+  {
+    id: 87,
+    name: 'Фуразолидон',
+    latinName: 'Furazolidonum',
+    form: 'Таблетки',
+    indication: 'при кишечных инфекциях',
+    recipe: 'Furazolidoni 0,05\nD.t.d. № 20 in tab.',
+    dosage: 'По 1 таблетке 4 раза в день 10 дней',
+    category: 'Нитрофураны'
+  },
+  {
+    id: 88,
+    name: 'Ко-тримоксазол',
+    altName: 'бисептол, бактрим',
+    latinName: 'Co-trimoxazolum',
+    form: 'Таблетки',
+    indication: '',
+    recipe: 'Sulfamethoxazoli 0,4\nTrimethoprimi 0,08\nD.t.d. № 20 in tab.',
+    dosage: 'Внутрь, по 1 таблетке 2 раза в день, после еды или разово 2 таблетки',
+    category: 'Комбинированные антибактериальные'
+  },
+  {
+    id: 89,
+    name: 'Бензилпенициллин',
+    altName: 'бензилпенициллина натриевая соль',
+    latinName: 'Benzylpenicillinum',
+    form: 'Порошок для инъекций',
+    indication: '',
+    recipe: 'Benzylpenicillini natrii 500 000 ЕD\nD.t.d. № 10',
+    dosage: 'Вводить в мышцу по 500 000 ЕД препарата 4 раза в сутки. Предварительно развести его в 2 мл воды для инъекций',
+    category: 'Пенициллины'
+  },
+  {
+    id: 90,
+    name: 'Бензилпенициллин',
+    altName: 'бензилпенициллина новокаиновая соль',
+    latinName: 'Benzylpenicillinum-novocainum',
+    form: 'Порошок для инъекций',
+    indication: '',
+    recipe: 'Benzylpenicillini novocaini 600000 ЕD\nD.t.d. № 10',
+    dosage: 'Внутримышечно по 300000 ЕД 2 раза в день',
+    category: 'Пенициллины'
+  },
+  {
+    id: 91,
+    name: 'Бензатина бензилпенициллин',
+    altName: 'бициллин-1',
+    latinName: 'Benzathini benzylpenicillinum',
+    form: 'Порошок для инъекций',
+    indication: '',
+    recipe: 'Benzathini Benzylpenicillini 600000ED\nD.t.d. № 10',
+    dosage: 'По 1 флакону 2 раза в день, внутривенно',
+    category: 'Пенициллины'
+  },
+  {
+    id: 92,
+    name: 'Бензатина бензилпенициллин+бензилпенициллин прокаина',
+    altName: 'бициллин-5',
+    latinName: 'Bicillinum-5',
+    form: 'Порошок для инъекций',
+    indication: '',
+    recipe: 'Benzsthini Benzylpenicillini 120000 ED\nBenzylpenicillini Procaini 300000 ED\nD.t.d. № 6',
+    dosage: 'Содержимое флакона развести 2 мл 0,25% раствора новакаина внутримышечно 1 раз в 4 недели',
+    category: 'Пенициллины'
+  },
+  {
+    id: 93,
+    name: 'Гентамицин',
+    altName: 'гентамицина сульфат',
+    latinName: 'Gentamicinum',
+    form: 'Раствор для инъекций',
+    indication: '',
+    recipe: 'Sol. Gentamycini sulfatis 4% - 2ml\nD.t.d. № 10 in amp.',
+    dosage: 'Внутримышечно по 2 мл 2 раза в день',
+    category: 'Аминогликозиды'
+  },
+  {
+    id: 94,
+    name: 'Нистатин',
+    latinName: 'Nystatinum',
+    form: 'Таблетки',
+    indication: 'противогрибкового действия',
+    recipe: 'Nystatini 500000 ЕD\nD.t.d. № 20 in tab.',
+    dosage: 'По 1 таблетке 3 раза в день',
+    category: 'Противогрибковые'
+  },
+  {
+    id: 95,
+    name: 'Оксациллина натриевая соль',
+    latinName: 'Oxacillinum-natrium',
+    form: 'Порошок для инъекций',
+    indication: '',
+    recipe: 'Oxacillini natrii 0,25\nD.t.d. № 20 in tab.',
+    dosage: 'По 1 таблетке 4 раза в день',
+    category: 'Пенициллины'
+  },
+  {
+    id: 96,
+    name: 'Олеандомицин+тетрациклин',
+    altName: 'олететрин',
+    latinName: 'Oleandomycinum+Tetracyclinum',
+    form: 'Капсулы комбинированного антибиотика',
+    indication: '',
+    recipe: 'Oleandomycini 0.095\nTetraciclini 0.155\nD.t.d. N.20',
+    dosage: 'По 1 таблетке 4 раза в день',
+    category: 'Комбинированные антибиотики'
+  },
+  {
+    id: 97,
+    name: 'Стрептомицин',
+    latinName: 'Streptomycinum',
+    form: 'Порошок для инъекций',
+    indication: '',
+    recipe: 'Streptomycini sulfatis 1,0\nD.t.d. № 10',
+    dosage: 'Содержимое флакона растворить в 4 мл воды для инъекций. Вводить внутримышечно 1 раз в сутки.',
+    category: 'Аминогликозиды'
+  },
+  {
+    id: 98,
+    name: 'Тетрациклин',
+    latinName: 'Tetracyclinum',
+    form: 'Таблетки',
+    indication: '',
+    recipe: 'Tetracyclini 0,1\nD.t.d. № 20 in tab.',
+    dosage: 'По 1 таблетке 4 раза в день',
+    category: 'Тетрациклины'
+  },
+  {
+    id: 99,
+    name: 'Цефазолин',
+    latinName: 'Cefazolinum',
+    form: 'Порошок для инъекций',
+    indication: '',
+    recipe: 'Cefazolini 1,0\nD.t.d. № 10',
+    dosage: 'Внутримышечно по 1 г 2-3 раза в день',
+    category: 'Цефалоспорины'
+  },
+  {
+    id: 100,
+    name: 'Эритромицин',
+    latinName: 'Erythromycinum',
+    form: 'Таблетки',
+    indication: '',
+    recipe: 'Erythromycini 0,25\nD.t.d. № 20 in tab.',
+    dosage: 'По 1 таблетке 4 раза в день за 1 час до еды',
+    category: 'Макролиды'
+  },
+  {
+    id: 101,
+    name: 'Изониазид',
+    latinName: 'Isoniazidum',
+    form: 'Таблетки',
+    indication: 'противотуберкулезного действия',
+    recipe: 'Isoniazidi 0,3\nD.t.d. № 30 in tab.',
+    dosage: 'По 1 таблетке 1 раз в день утром натощак',
+    category: 'Противотуберкулезные'
+  },
+  {
+    id: 102,
+    name: 'Метронидазол',
+    latinName: 'Metronidazolum',
+    form: 'Таблетки',
+    indication: 'противопротозойного действия',
+    recipe: 'Metronidazoli 0,25\nD.t.d. № 20 in tab.',
+    dosage: 'По 1 таблетке 3 раза в день',
+    category: 'Противопротозойные'
+  },
+  {
+    id: 103,
+    name: 'Хинин',
+    latinName: 'Chininum',
+    form: 'Таблетки',
+    indication: 'противомалярийного действия',
+    recipe: 'Chinini sulfatis 0,25\nD.t.d. № 20 in tab.',
+    dosage: 'По 1 таблетке 3 раза в день',
+    category: 'Противомалярийные'
+  },
+  {
+    id: 104,
+    name: 'Пиперазина адипинат',
+    latinName: 'Piperazini adipinas',
+    form: 'Таблетки',
+    indication: 'противогельминтного действия',
+    recipe: 'Tab. Piperazini adipinatis 0,5\nD.t.d. № 10 in tab.',
+    dosage: 'По 2 таблетки 2 раза в день в течение 2 дней',
+    category: 'Антигельминтные'
+  },
+  {
+    id: 105,
+    name: 'Празиквантел',
+    latinName: 'Praziquantelum',
+    form: 'Таблетки',
+    indication: 'противогельминтного действия',
+    recipe: 'Praziquanteli 0,6\nD.t.d. № 6 in tab.',
+    dosage: 'По 1 таблетке 3 раза в день с интервалом 4-6 часов',
+    category: 'Антигельминтные'
+  }
+]
